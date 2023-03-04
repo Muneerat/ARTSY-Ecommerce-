@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/clash-display"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <!--Navigation section begin-->
+    <nav class="nav">
+      <!--Logo-->
+      <div class="logo">
+        <img src="img/logo.png" alt="" />
+      </div>
+      <!--Nav links-->
+      <div class="nav-menu">
+        <ul class="nav-menu me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <div class="bottom"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Marketplace.html">Marketplace</a>
+            <div class="bottom"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Acutions.html">Auctions</a>
+            <div class="bottom"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Drop.html">Drop</a>
+            <div class="bottom"></div>
+          </li>
+        </ul>
+      </div>
+      <!--Nav icon-->
+      <div class="nav-icon">
+        <a href="#"><img src="img/search.png" alt="" class="icon-img" /></a>
+        <a href="checkout.html"
+          ><img src="img/cart.png" alt="" class="icon-img"
+        /></a>
+        <a href="Drop.html">
+          <img src="img/alarm.png" alt="" class="icon-img"
+        /></a>
+      </div>
+    </nav>
+    <!--Navigation section end-->
+    <div class="main-container">
+      <div class="d-flex">
+        <!-- search box-->
+
+        <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="formInput" placeholder="Search" />
+        </div>
+        <!-- sort -->
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control sortinput"
+            placeholder="See 1-6 of 15 results"
+            aria-label="Text input with dropdown button"
+          />
+          <div class="dropdown">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sort By
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">By category</a></li>
+              <li><a class="dropdown-item" href="#"> By price</a></li>
+              <li><a class="dropdown-item" href="#">By artist</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container product-container">
+        <div class="row">
+          <div class="col-3 sortMenu">
+            <div class="d-lg-flex filter-box">
+              <img src="img/Vector.png" alt="" class="filter-img" />
+              <h5>Filter</h5>
+            </div>
+            <div class="">
+              <h5 class="bycategory">
+                By category
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 dropup"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 15.75l7.5-7.5 7.5 7.5"
+                  />
+                </svg>
+              </h5>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Editorials
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Fashion
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Optics
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Art & Museum
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Nature
+                </label>
+              </div>
+            </div>
+            <!-- by price -->
+            <div class="">
+              <h5 class="bycategory">
+                By price
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 dropup"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 15.75l7.5-7.5 7.5 7.5"
+                  />
+                </svg>
+              </h5>
+              <p>$100.00 - $150.00</p>
+            </div>
+            <!-- By artist-->
+            <div class="">
+              <h5 class="bycategory">
+                By artist
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 dropup"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 15.75l7.5-7.5 7.5 7.5"
+                  />
+                </svg>
+              </h5>
+              <div class="">
+                <p class="underline">All</p>
+                <p>Below $100.00</p>
+                <p>$100.00 - $150.00</p>
+                <p>$150.00 - $200.00</p>
+                <p>Above $200.00</p>
+              </div>
+            </div>
+            <div class="">
+              <h6 class="bycategory">
+                Collection year
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 dropup"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 15.75l7.5-7.5 7.5 7.5"
+                  />
+                </svg>
+              </h6>
+            </div>
+          </div>
+          <div class="col-9 productSection">
+            <div class="">
+              <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="cartProduct">
+                    <img src="img/sun.png" alt="" class="product-img" />
+                    <p class="productName">PHILOMENA ‘22</p>
+                    <h5>$3.90</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="cartProduct">
+                    <img
+                      src="img/products (8).png"
+                      alt=""
+                      class="product-img"
+                    />
+                    <p class="productName">BOOLEAN EGYPTIAN</p>
+                    <h5>$3.90</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="cartProduct">
+                    <img
+                      src="img/products (7).png"
+                      alt=""
+                      class="product-img"
+                    />
+                    <p class="productName">BLANC</p>
+                    <h5>$3.90</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="cartProduct">
+                    <img
+                      src="img/products (6).png"
+                      alt=""
+                      class="product-img"
+                    />
+                    <p class="productName">ELLIPSIA</p>
+                    <h5>$3.90</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="cartProduct">
+                    <img
+                      src="img/products (5).png"
+                      alt=""
+                      class="product-img"
+                    />
+                    <p class="productName">THE LAWMAKERS</p>
+                    <h5>$3.90</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="cartProduct">
+                    <img
+                      src="img/products (4).png"
+                      alt=""
+                      class="product-img"
+                    />
+                    <p class="productName">VEIL</p>
+                    <h5>$3.90</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="cartProduct">
+                    <img
+                      src="img/products (3).png"
+                      alt=""
+                      class="product-img"
+                    />
+                    <p class="productName">ALTERNATING</p>
+                    <h5>$3.90</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="cartProduct">
+                    <img
+                      src="img/products (2).png"
+                      alt=""
+                      class="product-img"
+                    />
+                    <p class="productName">ROSEMARY ‘22</p>
+                    <h5>$3.90</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="cartProduct">
+                    <img
+                      src="img/products (1).png"
+                      alt=""
+                      class="product-img"
+                    />
+                    <p class="productName">BEVERLY</p>
+                    <h5>$3.90</h5>
+                  </div>
+                </div>
+                <button class="see-btn">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
