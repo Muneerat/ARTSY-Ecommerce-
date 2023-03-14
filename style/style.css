@@ -10,6 +10,10 @@
   padding: 1rem 0;
   margin: 0.6rem 0;
 }
+.hamburger {
+  background-color: #fff;
+  display: none;
+}
 li {
   list-style-type: none;
 }
@@ -272,9 +276,9 @@ ul li .bottom {
   height: 33rem;
 }
 .creators-img {
-  width: 40%;
+  width: 35%;
   position: absolute;
-  top: -26rem;
+  top: -27rem;
   left: 20rem;
   bottom: 0rem;
   /* opacity: 0; */
@@ -614,9 +618,20 @@ ul li .bottom {
 }
 .bycategory {
   padding: 1.5rem 0 1rem;
+  cursor: pointer;
+}
+.show-category {
+  display: none !important;
 }
 .form-check {
   margin-bottom: 0.5rem !important;
+  transition: all 10s ease;
+}
+.bi-chevron-down {
+  color: #3341c1;
+}
+.hidden {
+  display: none;
 }
 .cartProduct {
   background: #ffffff;

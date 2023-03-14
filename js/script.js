@@ -31,3 +31,40 @@ function clickImg(imageSrc) {
   // productAdd.src = window.location.href + "alarm.png";
   console.log("hello");
 }
+
+// marketplace
+const Category = document.querySelector(".bycategory");
+const form_check = document.querySelectorAll(".form-check");
+const icon = document.getElementById("icon");
+icon.addEventListener("click", displayCategory);
+function displayCategory() {
+  icon.classList.toggle("fa-angle-down");
+  form_check.forEach(function (btn) {
+    btn.classList.toggle("show-category");
+  });
+}
+
+//filter function
+const checkboxs = document.querySelectorAll('input[name="filter"]');
+const images = document.querySelectorAll(".col-md-4");
+// const imagess = document.querySelectorAll(".col-md-4");
+
+function filterImages() {
+  const selectedFilters = Array.from(checkboxs)
+    .filter((checkbox) => checkbox.checked)
+    .map((checkbox) => checkbox.value);
+
+  images.forEach((image) => {
+    const itemType = image.getAttribute("data-type");
+
+    if (selectedFilters.length === 0 || selectedFilters.includes(itemType)) {
+      image.classList.remove("hidden");
+    } else {
+      image.classList.add("hidden");
+    }
+  });
+}
+
+checkboxs.forEach((checkbox) => {
+  checkbox.addEventListener("change", filterImages);
+});
