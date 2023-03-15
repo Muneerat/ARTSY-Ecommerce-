@@ -111,7 +111,7 @@
             <div class="">
               <h5 class="bycategory">
                 By category
-                <i id="icon" class="fa fa-angle-up dropup"></i>
+                <i id="icon1" class="fa fa-angle-up dropup"></i>
               </h5>
               <div class="form-check show-category">
                 <input
@@ -178,30 +178,17 @@
             <div class="">
               <h5 class="bycategory">
                 By price
-                <i class="fa fa-angle-up dropup"></i>
+                <i id="icon2" class="fa fa-angle-up dropup"></i>
               </h5>
-              <p>$100.00 - $150.00</p>
+              <p class="itemprice show-category2">$100.00 - $150.00</p>
             </div>
             <!-- By artist-->
             <div class="">
               <h5 class="bycategory">
                 By artist
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6 dropup"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.5 15.75l7.5-7.5 7.5 7.5"
-                  />
-                </svg>
+                <i id="icon3" class="fa fa-angle-up dropup"></i>
               </h5>
-              <div class="">
+              <div class="artist show-category3">
                 <p class="underline">All</p>
                 <p>Below $100.00</p>
                 <p>$100.00 - $150.00</p>
@@ -212,53 +199,37 @@
             <div class="">
               <h6 class="bycategory">
                 Collection year
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6 dropup"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.5 15.75l7.5-7.5 7.5 7.5"
-                  />
-                </svg>
+                <i id="icon" class="fa fa-angle-up dropup"></i>
               </h6>
             </div>
           </div>
           <div class="col-9 productSection">
             <div class="">
               <div class="row gallery">
-                <div class="col-md-4 col-sm-6 col-xs-12" data-type="nature">
+                <div
+                  class="col-md-4 col-sm-6 col-xs-12"
+                  id="productId"
+                  data-type="editorials"
+                  onclick="viewProduct('productId')"
+                >
                   <div class="cartProduct">
-                    <img
-                      src="img/sun.png"
-                      alt=""
-                      class="nature product-img"
-                      data-categories="nature"
-                    />
+                    <img src="img/sun.png" alt="" class="product-img" />
                     <p class="productName">PHILOMENA ‘22</p>
                     <h5>$3.90</h5>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12" data-type="nature">
+                <div class="col-md-4 col-sm-6 col-xs-12" data-type="fashion">
                   <div class="cartProduct">
                     <img
                       src="img/products (8).png"
                       alt=""
-                      class="art&Museum product-img"
+                      class="product-img"
                     />
                     <p class="productName">BOOLEAN EGYPTIAN</p>
                     <h5>$3.90</h5>
                   </div>
                 </div>
-                <div
-                  class="col-md-4 col-sm-6 col-xs-12"
-                  data-type="art&Museum "
-                >
+                <div class="col-md-4 col-sm-6 col-xs-12" data-type="fashion">
                   <div class="cartProduct">
                     <img
                       src="img/products (7).png"
@@ -285,7 +256,7 @@
                     <img
                       src="img/products (5).png"
                       alt=""
-                      class="editorials product-img"
+                      class="product-img"
                     />
                     <p class="productName">THE LAWMAKERS</p>
                     <h5>$3.90</h5>
@@ -302,7 +273,7 @@
                     <h5>$3.90</h5>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12" data-type="editorials">
+                <div class="col-md-4 col-sm-6 col-xs-12" data-type="art&Museum">
                   <div class="cartProduct">
                     <img
                       src="img/products (3).png"
@@ -313,7 +284,7 @@
                     <h5>$3.90</h5>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12" data-type="editorials">
+                <div class="col-md-4 col-sm-6 col-xs-12" data-type="fashion">
                   <div class="cartProduct">
                     <img
                       src="img/products (2).png"
@@ -324,7 +295,7 @@
                     <h5>$3.90</h5>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12" data-type="editorials">
+                <div class="col-md-4 col-sm-6 col-xs-12" data-type="nature">
                   <div class="cartProduct">
                     <img
                       src="img/products (1).png"

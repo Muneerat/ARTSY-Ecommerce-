@@ -22,9 +22,9 @@ function clickImg(imageSrc) {
   const productAdd = document.querySelector(".product-add");
   let addedImg = document.querySelector(".add-img");
   var newImg = document.createElement("img");
-  newImg.src = imageSrc.src;
-  document.body.appendChild(newImg);
-  window.location.href = "/product-detail.html";
+  // newImg.src = imageSrc.src;
+  // document.body.appendChild(newImg);
+  // window.location.href = "/product-detail.html";
   // addedImg.innerHTML = `
   //  <h1>hello</h1>
   // `;
@@ -32,22 +32,54 @@ function clickImg(imageSrc) {
   console.log("hello");
 }
 
-// marketplace
-const Category = document.querySelector(".bycategory");
+/**
+ * Toggles - add or remove - a class in an element
+ *
+ * @param { HTMLElement } elem - The HTML element to toggle
+ * @param { String } className - The name of the class to toggle
+ * @returns { void }
+ */
+
+/**
+ *  toggleDropdown() -- change the dropdown angle up and down
+ *
+ */
+// function toggleDropdown() {
+//   icons.classList.toggle("fa-angle-down");
+// }
+
+const Category = document.querySelectorAll(".bycategory");
 const form_check = document.querySelectorAll(".form-check");
-const icon = document.getElementById("icon");
-icon.addEventListener("click", displayCategory);
+const icon1 = document.querySelector("#icon1");
+const icon2 = document.querySelector("#icon2");
+const icon3 = document.querySelector("#icon3");
+
+icon1.addEventListener("click", displayCategory);
 function displayCategory() {
-  icon.classList.toggle("fa-angle-down");
+  icon1.classList.toggle("fa-angle-down");
   form_check.forEach(function (btn) {
     btn.classList.toggle("show-category");
   });
 }
 
-//filter function
+icon2.addEventListener("click", displayCategory2);
+const itemprice = document.querySelector(".itemprice");
+function displayCategory2() {
+  icon2.classList.toggle("fa-angle-down");
+  itemprice.classList.toggle("show-category2");
+}
+icon3.addEventListener("click", displayCategory3);
+const artist = document.querySelector(".artist");
+function displayCategory3() {
+  icon3.classList.toggle("fa-angle-down");
+  artist.classList.toggle("show-category3");
+}
+/**
+ * Filter Function
+ * filter the image using the checkbox
+ */
 const checkboxs = document.querySelectorAll('input[name="filter"]');
 const images = document.querySelectorAll(".col-md-4");
-// const imagess = document.querySelectorAll(".col-md-4");
 
 function filterImages() {
   const selectedFilters = Array.from(checkboxs)
@@ -68,3 +100,10 @@ function filterImages() {
 checkboxs.forEach((checkbox) => {
   checkbox.addEventListener("change", filterImages);
 });
+
+/**
+ *
+ */
+function viewProduct(productId) {
+  window.location.href = "product-detail.html?id=" + productId;
+}

@@ -74,16 +74,12 @@
     <div class="container">
       <div class="row mx-4 my-5">
         <div class="add-img col-6 border border-dark">
-          <!-- <img
-            src="img/product-edit.png"
-            alt=""
-            class="product-add my-3 m-auto d-flex"
-          /> -->
+          <img src="" alt="" class="product-add my-3 m-auto d-flex" />
         </div>
         <div class="col-5 border border-dark px-0">
           <!-- border border-dark -->
           <div class="col d-flex p-3">
-            <h4>Boolean Egyptian</h4>
+            <h4 class="name-product">Boolean Egyptian</h4>
             <img src="img/symbol.png" alt="" class="symbol-img mx-3" />
             <h4>0.09</h4>
           </div>
@@ -319,6 +315,19 @@
     </footer>
     <!-- footer picture ends -->
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+          const urlParams = new URLSearchParams(window.location.search);
+          const productId = urlParams.get("id");
+          console.log(productId);
+          fetch(`/api/products/${productId}`)
+      .then(response => response.json())
+      .then(product => {
+        const productDetailImage = document.getElementsByClassName('product-add');
+        const productDetailName = document.getElementsByClassName('name-product');
+        productDetailImage.src = product.image;
+        productDetailName.innerText = product.name;
+        console.log(productDetailName)
+      });
+    </script>
   </body>
 </html>

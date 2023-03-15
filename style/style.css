@@ -623,6 +623,12 @@ ul li .bottom {
 .show-category {
   display: none !important;
 }
+.show-category2 {
+  display: none !important;
+}
+.show-category3 {
+  display: none !important;
+}
 .form-check {
   margin-bottom: 0.5rem !important;
   transition: all 10s ease;
