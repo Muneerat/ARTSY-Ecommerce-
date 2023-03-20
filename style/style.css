@@ -24,6 +24,9 @@ a {
   display: flex;
   cursor: pointer;
 }
+.span2 {
+  display: block;
+}
 /* .nav-link.active {
   text-decoration: underline;
   color: red !important;
@@ -78,10 +81,14 @@ ul li .bottom {
 .paragraph-text {
   font-size: 1.7rem;
 }
+.media-img {
+  display: none;
+}
 .container-img {
   width: 20.1rem;
   margin: 3rem 0;
   width: 100%;
+  display: flex;
 }
 .slider-img1 {
   width: 20%;
@@ -112,6 +119,7 @@ ul li .bottom {
 }
 .featured-products {
   margin: 2rem 0;
+  display: flex;
 }
 .featured-img {
   width: 100%;
@@ -526,6 +534,10 @@ ul li .bottom {
   }
 }
 @media screen and (max-width: 840px) {
+  .container-text {
+    font-size: 3rem;
+    margin: 3rem 0 5rem;
+  }
   .paragraph-text {
     font-size: 1.4rem;
   }
@@ -549,6 +561,88 @@ ul li .bottom {
   }
   .set_reminder {
     margin: 0rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .nav {
+    justify-content: space-around;
+  }
+  .hamburger {
+    display: block;
+    border: none;
+  }
+  .nav-menu ul {
+    display: none;
+  }
+  #alarm-icon {
+    display: none;
+  }
+  .container-text {
+    font-size: 2.5rem;
+  }
+  .paragraph-text {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container-text {
+    font-size: 2rem;
+    margin: 3rem 0 5rem;
+  }
+  .paragraph-text {
+    font-size: 0.8rem;
+  }
+  .media-img {
+    display: flex;
+  }
+  .container-img img {
+    display: none;
+  }
+  .featured-products {
+    margin: 2rem 0;
+    flex-direction: column;
+  }
+  #orderDisplay {
+    order: 2;
+  }
+  .arrow {
+    display: none;
+  }
+  /* .featured-img {
+    display: none;
+  } */
+  .cards .img-top {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .cards:hover .img-top {
+    display: inline;
+  }
+  .product-text {
+    margin: 2rem 0;
+  }
+  .exhibition-header {
+    display: none;
+  }
+  .bigArrow {
+    display: none;
+  }
+  #next-previous-icon {
+    display: none !important;
+  }
+  .progress {
+    display: none !important;
+  }
+  .text-item {
+    top: 4rem;
+    font-size: 0.4rem;
+    width: 70%;
+  }
+  .number {
+    width: 80%;
   }
 }
 /* MarketPlace */
