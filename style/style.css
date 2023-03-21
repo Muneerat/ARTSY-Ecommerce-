@@ -595,6 +595,13 @@ ul li .bottom {
   .media-img {
     display: flex;
   }
+  .media-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  .input-email {
+    padding: 0.5rem 2rem;
+  }
   .container-img img {
     display: none;
   }
@@ -656,9 +663,14 @@ ul li .bottom {
   .circa {
     left: 17rem;
     top: 17rem;
+    font-size: 1rem;
   }
   .date {
     left: 5rem;
+    font-size: 6rem;
+  }
+  .paragraph-box {
+    font-size: 0.8rem;
   }
   .creators-img {
     width: 65%;
