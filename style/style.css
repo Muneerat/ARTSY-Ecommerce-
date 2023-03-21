@@ -27,6 +27,9 @@ a {
 .span2 {
   display: block;
 }
+.close_links {
+  display: none;
+}
 /* .nav-link.active {
   text-decoration: underline;
   color: red !important;
@@ -574,8 +577,36 @@ ul li .bottom {
   .nav-menu ul {
     display: none;
   }
-  #alarm-icon {
-    display: none;
+
+  .show-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+  }
+  .close_links {
+    font-size: 3rem;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    margin: 15px 30px;
+  }
+  .nav-item {
+    padding: 0.5rem 0;
+  }
+  .show-menu ul {
+    display: block;
+    position: fixed;
+    background: #ffffff;
+    height: 100%;
+    width: 70%;
+    z-index: 999;
+    top: 0;
   }
   .container-text {
     font-size: 2.5rem;

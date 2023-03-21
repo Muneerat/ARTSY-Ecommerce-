@@ -1,3 +1,21 @@
+/**
+ * Toggle Hamburger button
+ */
+const nav_menu = document.querySelector(".nav-menu");
+const hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", showMenu);
+function showMenu() {
+  nav_menu.classList.toggle("show-menu");
+}
+/***
+ * Close links menu
+ */
+const close_links = document.querySelector(".close_links");
+close_links.addEventListener("click", closeMenu);
+function closeMenu() {
+  nav_menu.classList.remove("show-menu");
+}
+
 const nav_item = document.querySelectorAll(".nav-link");
 const bottom = document.querySelectorAll(".bottom");
 const links = document.querySelectorAll(".my-link");
