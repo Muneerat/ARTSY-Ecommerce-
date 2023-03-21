@@ -644,6 +644,49 @@ ul li .bottom {
   .number {
     width: 80%;
   }
+  .details {
+    display: block;
+  }
+  .reminder {
+    padding: 0 1.5rem;
+  }
+  .set_reminder {
+    margin: 0 1rem;
+  }
+  .circa {
+    left: 17rem;
+    top: 17rem;
+  }
+  .date {
+    left: 5rem;
+  }
+  .creators-img {
+    width: 65%;
+    top: -17rem;
+    left: 8rem;
+    bottom: 0rem;
+  }
+  .newletter-box {
+    border: 0;
+    margin: 2rem 2rem;
+    text-align: left;
+    padding: 0;
+  }
+  .sub-btn {
+    margin-top: 2rem;
+  }
+  .logo-img {
+    display: none;
+  }
+  .link-box {
+    display: none;
+  }
+  #link-show {
+    display: block;
+  }
+  .footer {
+    justify-content: left;
+  }
 }
 /* MarketPlace */
 .has-search .form-control {
