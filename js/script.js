@@ -8,7 +8,7 @@ function showMenu() {
   nav_menu.classList.toggle("show-menu");
 }
 /***
- * Close links menu
+ * Close hamburger menu 
  */
 const close_links = document.querySelector(".close_links");
 close_links.addEventListener("click", closeMenu);
