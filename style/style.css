@@ -1070,4 +1070,22 @@ ul li .bottom {
   .payment-proceed {
     flex-direction: column;
   }
+  .button-box {
+    order: 2;
+  }
+  .product-description {
+    font-size: 11px;
+  }
+  .clear {
+    display: none;
+  }
+}
+/* Thank you */
+.thanks-img {
+  width: 30%;
+}
+@media screen and (max-width: 500px) {
+  .thanks-img {
+    width: 90%;
+  }
 }

@@ -94,7 +94,7 @@
           aria-controls="pills-home"
           aria-selected="true"
         >
-          Shopping cart
+          Shopping
         </button>
       </li>
       <li class="nav-item" role="presentation">
@@ -108,7 +108,7 @@
           aria-controls="pills-profile"
           aria-selected="false"
         >
-          Shipping details
+          Shipping
         </button>
       </li>
       <li class="nav-item" role="presentation">
@@ -122,7 +122,7 @@
           aria-controls="pills-contact"
           aria-selected="false"
         >
-          Payment details
+          Payment
         </button>
       </li>
     </ul>
@@ -140,25 +140,29 @@
             <div class="product-cart">
               <img src="img/sun.png" alt="" style="width: 75%" />
             </div>
-            <div class="">
+            <div class="product-description">
               <h6>Philomena ‘22</h6>
-              <p style="color: rgba(136, 136, 136, 1)" class="">Clearamane</p>
+              <p style="color: rgba(136, 136, 136, 1)" class="clear">
+                Clearamane
+              </p>
               <p class="">
                 <span style="color: rgba(136, 136, 136, 1)" class="pe-2">
                   Size:</span
                 >200 ft
               </p>
-              <div class="btns border-0">
-                <button class="btn border-0" style="font-size: 20px">-</button>
-                <button class="btn border-0" style="font-size: 20px">1</button>
-                <button class="btn border-0" style="font-size: 20px">+</button>
+              <div class="border-0">
+                <button class="btns border-0" style="font-size: 20px">-</button>
+                <button class="btns border-0 mx-2" style="font-size: 20px">
+                  1
+                </button>
+                <button class="btns border-0" style="font-size: 20px">+</button>
               </div>
             </div>
           </div>
           <div class="d-flex flex-column justify-content-between">
             <div>
               <div
-                class="close me-5 border"
+                class="close border"
                 style="
                   font-size: 22px;
                   border-radius: 50%;
@@ -180,9 +184,11 @@
             <div class="product-cart">
               <img src="img/sun.png" alt="" style="width: 75%" />
             </div>
-            <div class="">
+            <div class="product-description">
               <h6>Philomena ‘22</h6>
-              <p style="color: rgba(136, 136, 136, 1)" class="">Clearamane</p>
+              <p style="color: rgba(136, 136, 136, 1)" class="clear">
+                Clearamane
+              </p>
               <p class="">
                 <span style="color: rgba(136, 136, 136, 1)" class="pe-2">
                   Size:</span
@@ -200,7 +206,7 @@
           <div class="d-flex flex-column justify-content-between">
             <div>
               <div
-                class="close me-5 border"
+                class="close border"
                 style="
                   font-size: 22px;
                   border-radius: 50%;
@@ -217,7 +223,7 @@
         </div>
         <hr />
         <div class="d-flex justify-content-around my-4 payment-proceed">
-          <div class="">
+          <div class="m-auto button-box">
             <button
               class="border py-3 px-5"
               style="background: rgba(51, 65, 193, 1); color: #fff"
@@ -233,7 +239,7 @@
               >
             </div>
           </div>
-          <div class="">
+          <div class="m-auto">
             <p>Products in cart :<span class="ms-5"> 3 items</span></p>
             <p>
               Shipping :<span class="" style="margin-left: 6rem">$2.50 </span>
@@ -251,7 +257,7 @@
         aria-labelledby="pills-profile-tab"
       >
         <div class="row">
-          <div class="col-6" style="color: rgba(136, 136, 136, 1)">
+          <div class="col-sm-6 col-12" style="color: rgba(136, 136, 136, 1)">
             <div class="col mb-3">
               <label for="inputEmail4" class="form-label">Your email</label>
               <input
@@ -270,7 +276,10 @@
                   id="gridCheck"
                   style="background: rgba(242, 242, 242, 1)"
                 />
-                <label class="form-check-label" for="gridCheck">
+                <label
+                  class="form-check-label product-description"
+                  for="gridCheck"
+                >
                   Get updates about new drops & exclusive offers
                 </label>
               </div>
@@ -346,15 +355,17 @@
                 style="background: rgba(242, 242, 242, 1)"
               />
             </div>
-            <button
-              class="border py-3 px-5"
-              style="background: rgba(51, 65, 193, 1); color: #fff"
-            >
-              Proceed to payment
-            </button>
+            <div class="d-flex">
+              <button
+                class="border py-3 px-5 m-auto"
+                style="background: rgba(51, 65, 193, 1); color: #fff"
+              >
+                Proceed to payment
+              </button>
+            </div>
           </div>
 
-          <div class="col-6">
+          <div class="col-6 clear">
             <div class="col-12">
               <hr />
               <div class="d-flex justify-content-between">
@@ -530,21 +541,22 @@
         Payment method
         <div class="row">
           <div
-            class="col-6 border border-pill my-4 p-4"
+            class="col-sm-6 col-12 border border-pill my-4 p-4"
             style="color: rgba(136, 136, 136, 1)"
           >
             <div class="col-12">
-              <div class="form-check d-flex">
-                <input
-                  class="form-check-input me-3"
-                  type="radio"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="gridCheck">
-                  Select your wallet
-                </label>
-
+              <div class="form-check d-flex payment-proceed">
+                <div class="">
+                  <input
+                    class="form-check-input me-3"
+                    type="radio"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    Select your wallet
+                  </label>
+                </div>
                 <div class="ms-5">
                   <img src="img/Coinbase - png.png" alt="" style="width: 15%" />
                   <img
@@ -560,7 +572,7 @@
                   <img src="img/Phantom - jpeg.png" alt="" style="width: 15%" />
                 </div>
               </div>
-              <div class="mx-5 my-3">
+              <div class="mx-1 my-3 product-description">
                 Connect with one of our available wallet providers or add and
                 connect a new wallet.
               </div>
@@ -625,10 +637,10 @@
               class="border py-3 px-5"
               style="background: rgba(51, 65, 193, 1); color: #fff"
             >
-              Confirm
+              <a href="ThankYou.html" style="color: #fff"> Confirm</a>
             </button>
           </div>
-          <div class="col-6">
+          <div class="col-sm-6 clear">
             <h5>Payment Summary</h5>
             <div class="col-12">
               <hr />
