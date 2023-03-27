@@ -101,25 +101,25 @@ function displayCategory3() {
 const checkboxs = document.querySelectorAll('input[name="filter"]');
 const images = document.querySelectorAll(".col-md-4");
 
-// function filterImages() {
-//   const selectedFilters = Array.from(checkboxs)
-//     .filter((checkbox) => checkbox.checked)
-//     .map((checkbox) => checkbox.value);
+function filterImages() {
+  const selectedFilters = Array.from(checkboxs)
+    .filter((checkbox) => checkbox.checked)
+    .map((checkbox) => checkbox.value);
 
-//   images.forEach((image) => {
-//     const itemType = products.type;
+  images.forEach((image) => {
+    const itemType = products.type;
 
-//     if (selectedFilters.length === 0 || selectedFilters.includes(itemType)) {
-//       image.classList.remove("hidden");
-//     } else {
-//       image.classList.add("hidden");
-//     }
-//   });
-// }
+    if (selectedFilters.length === 0 || selectedFilters.includes(itemType)) {
+      image.classList.remove("hidden");
+    } else {
+      image.classList.add("hidden");
+    }
+  });
+}
 
-// checkboxs.forEach((checkbox) => {
-//   checkbox.addEventListener("change", filterImages);
-// });
+checkboxs.forEach((checkbox) => {
+  checkbox.addEventListener("change", filterImages);
+});
 
 /**
  *
@@ -167,46 +167,3 @@ const productId = urlParams.get("product_id");
 
 // Use the product ID in your code
 console.log(productId); // Outputs "123"
-
-/**
- * Filter products function
- *
- */
-
-const editorialsCheckBox = document.getElementById("editorials");
-const fashionCheckBox = document.getElementById("fashion");
-// const images = document.querySelectorAll(".col-md-4");
-
-editorialsCheckBox.addEventListener("checked", updateFilter());
-fashionCheckBox.addEventListener("click", updateFilter);
-
-// function updateFilter() {
-//   const filterItem = products.filter((product) => {
-//     if (editorialsCheckBox.checked && product.type === "editorials") {
-//       return true;
-//     } else {
-//       return false;
-//     }
-//   });
-//   displayFilterProduct(filterItem);
-// }
-// function displayFilterProduct(filterItem) {
-//   gallery.innerHTML = "";
-//   for (let i = 0; i < filterItem.length; i++) {
-//     const productss = filterItem[i];
-
-//     images.classList.remove("hidden");
-//   }
-// }
-//  const productsContainer = document.getElementById('products-container');
-//         productsContainer.innerHTML = '';
-
-//         // Create links for each product in the filtered array
-//         for (let i = 0; i < filteredProducts.length; i++) {
-//           const product = filteredProducts[i];
-//           const link = document.createElement('a');
-//           link.href = `product-details.html?id=${product.id}`;
-//           link.textContent = product.name;
-//           productsContainer.appendChild(link);
-//         }
-//       }

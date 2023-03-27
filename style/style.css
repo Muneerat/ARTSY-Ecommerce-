@@ -1089,3 +1089,6 @@ ul li .bottom {
     width: 90%;
   }
 }
+.cartProduct a {
+  color: #000000 !important;
+}

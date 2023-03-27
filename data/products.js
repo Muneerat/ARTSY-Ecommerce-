@@ -1,0 +1,66 @@
+let products = [
+  {
+    productId: 1,
+    name: "PHILOMENA ‘22",
+    price: "$3.90",
+    image: "img/sun.png",
+    type: "editorials",
+  },
+  {
+    productId: 2,
+    name: "BOOLEAN EGYPTIAN",
+    price: "$3.90",
+    image: "/img/products (8).png",
+    type: "fashion",
+  },
+  {
+    productId: 3,
+    name: "BLANC",
+    price: "$3.90",
+    image: "/img/products (7).png",
+    type: "fashion",
+  },
+  {
+    productId: 4,
+    name: "ELLIPSIA",
+    price: "$3.90",
+    image: "/img/products (6).png",
+    type: "optics",
+  },
+  {
+    productId: 5,
+    name: "THE LAWMAKERS",
+    price: "$3.90",
+    image: "/img/products (5).png",
+    type: "optics",
+  },
+  {
+    productId: 6,
+    name: "VEIL",
+    price: "$3.90",
+    image: "/img/products (4).png",
+    type: "fashion",
+  },
+  {
+    productId: 7,
+    name: "ALTERNATING",
+    price: "$3.90",
+    image: "/img/products (3).png",
+    type: "art&Museum",
+  },
+  {
+    productId: 8,
+    name: "ROSEMARY ‘22",
+    price: "$3.90",
+    image: "img/products (2).png",
+    type: "fashion",
+  },
+  {
+    productId: 9,
+    name: "BEVERLY",
+    price: "$3.90",
+    image: "/img/products (1).png",
+    type: "nature",
+  },
+];
+export default products;

@@ -129,17 +129,17 @@
               <h5>Filter</h5>
             </div>
             <div class="">
-              <h5 class="bycategory">
+              <h5 class="bycategory" id="icon1">
                 By category
-                <i id="icon1" class="fa fa-angle-up dropup"></i>
+                <i class="fa fa-angle-up dropup"></i>
               </h5>
-              <div class="form-check show-category">
+              <div class="form-check show-category" id="editorials">
                 <input
                   class="form-check-input stroeCheckbox"
                   type="checkbox"
                   value="editorials"
                   name="filter"
-                  id="flexCheckChecked"
+                  id="flexCheckChecked "
                 />
                 <label class="form-check-label" for="flexCheckChecked">
                   Editorials
@@ -150,7 +150,7 @@
                   class="form-check-input stroeCheckbox"
                   type="checkbox"
                   value="fashion"
-                  id="flexCheckDefault"
+                  id="flexCheckDefault fashion"
                   name="filter"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
@@ -226,19 +226,21 @@
           <div class="col-sm-9 col-12 productSection">
             <div class="">
               <div class="row gallery">
-                <div
+                <!-- 
+                  <div
                   class="col-md-4 col-sm-6 col-xs-12"
                   id="productId"
                   data-type="editorials"
                   onclick="viewProduct('productId')"
                 >
+                  <a href="/product-detail.html?productId=1"></a>
                   <div class="cartProduct">
                     <img src="img/sun.png" alt="" class="product-img" />
                     <p class="productName">PHILOMENA ‘22</p>
                     <h5>$3.90</h5>
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12" data-type="fashion">
+                <div class="col-md-4 col-sm-6 col-xs2q-12" data-type="fashion">
                   <div class="cartProduct">
                     <a href="product-detail.html">
                       <img
@@ -328,7 +330,7 @@
                     <p class="productName">BEVERLY</p>
                     <h5>$3.90</h5>
                   </div>
-                </div>
+                </div> -->
               </div>
               <button class="see-btn">See More</button>
             </div>
@@ -403,6 +405,9 @@
       <p class="footer-reserved">Artsystudios © 2022. All Rights Reserved.</p>
     </div>
     <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="data/products.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
